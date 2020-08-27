@@ -1,41 +1,41 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# divide-remainder [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/divide-remainder/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/divide-remainder)
 
-My awesome module.
+Divide a number and get a quotient and remainder.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/divide-remainder.png)](https://npmjs.com/package/divide-remainder)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install divide-remainder
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const divideRemainder = require("divide-remainder");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+const { quotient, remainder } = divideRemainder(5, 2);
+
+console.log(quotient);
+//=> 2
+
+console.log(remainder);
+//=> 1
 ```
 
 ## API
 
-### theModule(input, options?)
+### divideRemainder(number, divisor)
 
-#### input
+#### number
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
+The number to divide.
 
-#### options
+#### divisor
 
-Type: `object`
+Type: `number`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The number to divide by.

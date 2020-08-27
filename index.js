@@ -1,9 +1,16 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") {
-		throw new TypeError(`Expected a string, got ${typeof input}`)
+module.exports = (number, divisor) => {
+	if (typeof number !== "number") {
+		throw new TypeError(`Expected a number, got ${typeof number}`)
 	}
 
-	return `${input} & ${postfix}`
+	if (typeof divisor !== "number") {
+		throw new TypeError(`Expected a number, got ${typeof divisor}`)
+	}
+
+	const remainder = number % divisor
+	const quotient = (number - remainder) / divisor
+
+	return { quotient, remainder }
 }

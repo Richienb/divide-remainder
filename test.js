@@ -1,13 +1,13 @@
 const test = require("ava")
-const theModule = require(".")
+const divideRemainder = require(".")
 
 test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
+	t.deepEqual(divideRemainder(5, 2), {
+		quotient: 2,
+		remainder: 1
 	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.deepEqual(divideRemainder(-5, -2), {
+		quotient: 2,
+		remainder: -1
+	})
 })

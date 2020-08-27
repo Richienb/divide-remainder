@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "divide-remainder",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Divide a number and get a quotient and remainder.",
+	"repository": "https://github.com/Richienb/divide-remainder.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,7 +17,17 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"divide",
+		"quotient",
+		"remainder",
+		"math",
+		"modulo",
+		"mod",
+		"round",
+		"floor",
+		"down"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.11.1",

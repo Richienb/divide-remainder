@@ -1,15 +1,23 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Divide a number and get a quotient and remainder.
+@param number The number to divide.
+@param divisor The number to divide by.
 @example
 ```
-const theModule = require("the-module");
+const divideRemainder = require("divide-remainder");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+const { quotient, remainder } = divideRemainder(5, 2);
+
+console.log(quotient);
+//=> 2
+
+console.log(remainder);
+//=> 1
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function divideRemainder(number: number, divisor: number): {
+	quotient: number
+	remainder: number
+}
 
-export = theModule
+export = divideRemainder
