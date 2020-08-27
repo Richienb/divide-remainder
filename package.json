@@ -1,6 +1,6 @@
 {
 	"name": "divide-remainder",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Divide a number and get a quotient and remainder.",
 	"repository": "https://github.com/Richienb/divide-remainder.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
